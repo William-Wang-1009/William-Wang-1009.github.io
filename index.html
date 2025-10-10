@@ -1,38 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Weibang Wang's Personal Homepage</title>
-    <style>
-        body {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        a {
-            color: #0077cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weibang Wang | Personal Homepage</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f9fafb;
+      color: #333;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    main {
+      flex: 3;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      height: fit-content;
+    }
+
+    img.profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-position: 5% 60%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 15px auto;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 6px;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 40px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    @media (max-width: 800px) {
+      body {
+        flex-direction: column;
+      }
+      aside {
+        order: -1;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, I'm Weibang Wang</h1>
-    <p>Undergraduate student in the <strong>Mathematics and Physics Program</strong> at <strong>Zhili College, Tsinghua University</strong>.</p>
-    <p>My research interests lie in the fields of <strong>Computer Vision</strong> and <strong>Deep Learning</strong>.</p>
-    <p>Feel free to reach out and connect!</p>
+  <main>
+    <header>
+      <h1>Hello, I'm Weibang Wang</h1>
+      <p>Undergraduate student in <strong>Basic Science of Mathematics and Physics</strong> at <strong>Tsinghua University</strong>.</p>
+      <p>Feel free to reach out and connect!</p>
+    </header>
+
+    <!-- <section>
+      <h2>About Me</h2>
+      <p>
+        I'm passionate about exploring the intersection of <strong>mathematics</strong>, <strong>physics</strong>, and <strong>artificial intelligence</strong>. 
+        My academic interests focus on <strong>computer vision</strong>, <strong>deep learning</strong>, and the <strong>mathematical foundations of AI</strong>. 
+        I enjoy combining theoretical insights with computational practice to solve real-world problems.
+      </p>
+    </section> -->
+
+    <section>
+      <h2>Research Interests</h2>
+      <ul>
+        <li>3D/4D Scene Representation and Reconstruction</li>
+        <li>Multimodal Large Models</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li style="list-style: none; margin-bottom: 20px;">
+            <div style="display: flex; align-items: flex-start; gap: 30px;">
+              
+              <div>
+                <img src="slamformer.png" alt="SLAM-Former" style="width:120px; height:120px; object-fit: cover; border-radius:8px;">
+              </div>
+              
+              <div style="display: flex; flex-direction: column; gap: 5px; flex: 1;">
+                <div><strong>SLAM-Former: Putting SLAM into One Transformer</strong></div>
+                <div>We present SLAM-Former, a novel neural approach that integrates full SLAM capabilities into a single transformer.</div>
+                <div style="display: flex; gap: 10px;">
+                    <a href="https://arxiv.org/html/2509.16909v1" target="_blank">arXiv</a>
+                    <a href="https://tsinghua-mars-lab.github.io/SLAM-Former/" target="_blank">Project Homepage</a>
+                </div>
+              </div>
+              
+            </div>
+          </li>
+
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2025 Weibang Wang | Last updated: October 2025</p>
+    </footer>
+  </main>
+
+  <aside>
+    <img src="./IMG_7546.JPG" alt="Weibang Wang" class="profile">
+
+    <h2>Contact</h2>
     <p>Email: <a href="mailto:wangwb23@mails.tsinghua.edu.cn">wangwb23@mails.tsinghua.edu.cn</a></p>
-    <hr>
-    <p>Welcome to my GitHub homepage</p>
+    <p>
+      <!-- <a href="https://github.com/yourusername" target="_blank">GitHub</a><br> -->
+      <!-- <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a><br> -->
+      <!-- <a href="https://scholar.google.com/citations?user=yourid" target="_blank">Google Scholar</a> -->
+    </p>
+  </aside>
 </body>
 </html>
-
