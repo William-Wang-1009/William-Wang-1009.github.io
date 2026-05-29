@@ -152,6 +152,7 @@
     <section>
       <h2>🔥 News</h2>
       <ul>
+        <li><strong>2026.4</strong> 🏆 Awarded the <strong>Special Prize</strong> at the <strong>44th Tsinghua Challenge Cup</strong> (1st Place, Information Technology Track).</li>
         <li><strong>2026.2</strong> 🎉 One paper has been accepted by <strong>CVPR 2026</strong>!</li>
         <!-- <li><strong>Jan 2026</strong> — Started research on online 3D point tracking and dynamic scene reconstruction.</li> -->
         <!-- <li><strong>Sep 2023</strong> — Joined the Basic Science of Mathematics and Physics program at Tsinghua University.</li> -->
@@ -163,90 +164,135 @@
       <p style="font-size: 0.9em; color: #555; margin-bottom: 15px;">
         (*Equal contribution, †Corresponding authors)
       <ul>
+
+        <!-- StreamTracker -->
         <li style="list-style: none; margin-bottom: 30px;">
-            <div style="display: flex; align-items: flex-start; gap: 30px;">
-              
-              <!-- <div>
-                <img src="slamformer.png" alt="SLAM-Former" 
-                    style="width:400px; height:200px; object-fit: cover; border-radius:8px;">
-              </div> -->
-              <div>
-                <img src="slamformer.png" alt="SLAM-Former"
-                     style="
-                       width:400px; 
-                       height:200px; 
-                       object-fit: cover; 
-                       border-radius:12px; 
-                       /* border: 2px solid #ccc;  */
-                       box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
-                       transition: transform 0.3s, box-shadow 0.3s;
-                     "
-                     onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.3)';"
-                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.2)';">
-              </div>
-
-              <div style="display: flex; flex-direction: column; gap: 5px; flex: 1;">
-                <!-- <div><strong>SLAM-Former: Putting SLAM into One Transformer</strong></div> -->
-                <div style="color:#0077cc;"><strong>SLAM-Former: Putting SLAM into One Transformer</strong></div>
-                <!-- <div style="font-style: italic; color: #555;">Yijun Yuan, Zhuoguang Chen, Kenan Li, Weibang Wang, Hang Zhao</div> -->
-                <div style="font-style: italic; color: #5f5858;">
-                  Yijun Yuan, Zhuoguang Chen, Kenan Li, 
-                  <span style="font-weight: bold; text-decoration: underline; color:#2c3e50;">Weibang Wang</span>, 
-                  Hang Zhao†
-                </div>
-                <div style="font-style: italic; color:#3d3a3a; font-size:0.9em;">arXiv preprint arXiv:2509.16909.</div>
-                <!-- <div>We present SLAM-Former, a novel neural approach that integrates full SLAM capabilities into a single transformer.</div> -->
-                <!-- <div style="display: flex; gap: 10px;">
-                    <a href="https://arxiv.org/html/2509.16909v1" target="_blank">arXiv</a>
-                    <a href="https://tsinghua-mars-lab.github.io/SLAM-Former/" target="_blank">Project Homepage</a>
-                </div> -->
-                <div style="display: flex; gap: 10px;">
-                  <a href="https://arxiv.org/html/2509.16909v1" target="_blank" style="color:#1a1a1a; text-decoration: underline;">arXiv</a>
-                  <a href="https://tsinghua-mars-lab.github.io/SLAM-Former/" target="_blank" style="color:#1a1a1a; text-decoration: underline;">Project Homepage</a>
-                </div>
-              </div>
-            
+          <div style="display: flex; align-items: flex-start; gap: 30px;">
+        
+            <div>
+              <img src="streamtracker.png" alt="StreamTracker"
+                   style="
+                     width:400px;
+                     height:200px;
+                     object-fit: cover;
+                     border-radius:12px;
+                     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+                     transition: transform 0.3s, box-shadow 0.3s;
+                   "
+                   onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.3)';"
+                   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.2)';">
             </div>
-          </li>
-
-          <li style="list-style: none; margin-bottom: 30px;">
-            <div style="display: flex; align-items: flex-start; gap: 30px;">
-
-              <!-- <div>
-                <img src="complet4r.png" alt="Complet4R" 
-                    style="width:400px; height:200px; object-fit: cover; border-radius:8px;">
-              </div> -->
-              <div>
-                <img src="complet4r.png" alt="Complet4R" 
-                     style="
-                       width:400px; 
-                       height:200px; 
-                       object-fit: cover; 
-                       border-radius:12px; 
-                       /* border: 2px solid #ccc;  */
-                       box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
-                       transition: transform 0.3s, box-shadow 0.3s;
-                     "
-                     onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.3)';"
-                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.2)';">
+        
+            <div style="display: flex; flex-direction: column; gap: 5px; flex: 1;">
+              <div style="color:#0077cc;">
+                <strong>StreamTracker: Streaming 3D Point Tracking in Dynamic Scenes</strong>
               </div>
-
-              <div style="display: flex; flex-direction: column; gap: 5px; flex: 1;">
-                <div style="color:#0077cc;"><strong>Complet4R: Geometric Complete 4D Reconstruction</strong></div>
-                <div style="font-style: italic; color: #5f5858;"><span style="font-weight: bold; text-decoration: underline; color:#2c3e50;">Weibang Wang*</span>, 
-                  Kenan Li*, Zhuoguang Chen*, Yijun Yuan†, Hang Zhao†</div>
-                
-                <div style="font-style: italic; color:#3d3a3a; font-size:0.9em;">The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026</div>
-
-                <!-- <div>An end-to-end framework for reconstructing temporally coherent and geometrically complete 4D dynamic scenes from sequential video.</div> -->
-                <div style="display: flex; gap: 10px;">
-                  <a href="http://arxiv.org/abs/2603.27300" target="_blank" style="color:#1a1a1a; text-decoration: underline;">arXiv</a>
-                  <a href="#" target="_blank" style="color:#1a1a1a; text-decoration: underline;">Project Homepage</a>
-                </div>
+        
+              <div style="font-style: italic; color: #5f5858;">
+                <span style="font-weight: bold; text-decoration: underline; color:#2c3e50;">Weibang Wang</span>,
+                Zhuoguang Chen, Kenan Li, Weicheng Zheng,
+                Minghui Qin, Zhijian Fang, Chang Sun,
+                Junhao Huang, Yijun Yuan†, Hang Zhao†
               </div>
-            
+        
+              <div style="font-style: italic; font-weight: 600; color:#3d3a3a; font-size:0.9em;">
+                NeurIPS 2026 Submission (Under Review)
+              </div>
+        
+              <div style="display: flex; gap: 10px;">
+                <a href="#" target="_blank" style="color:#1a1a1a; text-decoration: underline;">arXiv</a>
+                <a href="#" target="_blank" style="color:#1a1a1a; text-decoration: underline;">Project Homepage</a>
+              </div>
             </div>
-          </li>
+        
+          </div>
+        </li>
+        
+        <!-- Complet4R -->
+        <li style="list-style: none; margin-bottom: 30px;">
+          <div style="display: flex; align-items: flex-start; gap: 30px;">
+        
+            <div>
+              <img src="complet4r.png" alt="Complet4R"
+                   style="
+                     width:400px;
+                     height:200px;
+                     object-fit: cover;
+                     border-radius:12px;
+                     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+                     transition: transform 0.3s, box-shadow 0.3s;
+                   "
+                   onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.3)';"
+                   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.2)';">
+            </div>
+        
+            <div style="display: flex; flex-direction: column; gap: 5px; flex: 1;">
+              <div style="color:#0077cc;">
+                <strong>Complet4R: Geometric Complete 4D Reconstruction</strong>
+              </div>
+        
+              <div style="font-style: italic; color: #5f5858;">
+                <span style="font-weight: bold; text-decoration: underline; color:#2c3e50;">Weibang Wang*</span>,
+                Kenan Li*, Zhuoguang Chen*, Yijun Yuan†, Hang Zhao†
+              </div>
+        
+              <!-- <div style="font-style: italic; color:#3d3a3a; font-size:0.9em;">
+                The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
+              </div> -->
+              <div style="font-style: italic; font-weight: 600; color:#3d3a3a; font-size:0.9em;">
+                The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
+              </div>
+        
+              <div style="display: flex; gap: 10px;">
+                <a href="http://arxiv.org/abs/2603.27300" target="_blank" style="color:#1a1a1a; text-decoration: underline;">arXiv</a>
+                <a href="#" target="_blank" style="color:#1a1a1a; text-decoration: underline;">Project Homepage</a>
+              </div>
+            </div>
+        
+          </div>
+        </li>
+        
+        <!-- SLAM-Former -->
+        <li style="list-style: none; margin-bottom: 30px;">
+          <div style="display: flex; align-items: flex-start; gap: 30px;">
+        
+            <div>
+              <img src="slamformer.png" alt="SLAM-Former"
+                   style="
+                     width:400px;
+                     height:200px;
+                     object-fit: cover;
+                     border-radius:12px;
+                     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+                     transition: transform 0.3s, box-shadow 0.3s;
+                   "
+                   onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.3)';"
+                   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.2)';">
+            </div>
+        
+            <div style="display: flex; flex-direction: column; gap: 5px; flex: 1;">
+              <div style="color:#0077cc;">
+                <strong>SLAM-Former: Putting SLAM into One Transformer</strong>
+              </div>
+        
+              <div style="font-style: italic; color: #5f5858;">
+                Yijun Yuan, Zhuoguang Chen, Kenan Li,
+                <span style="font-weight: bold; text-decoration: underline; color:#2c3e50;">Weibang Wang</span>,
+                Hang Zhao†
+              </div>
+        
+              <div style="font-style: italic; color:#3d3a3a; font-size:0.9em;">
+                arXiv preprint arXiv:2509.16909
+              </div>
+        
+              <div style="display: flex; gap: 10px;">
+                <a href="https://arxiv.org/html/2509.16909v1" target="_blank" style="color:#1a1a1a; text-decoration: underline;">arXiv</a>
+                <a href="https://tsinghua-mars-lab.github.io/SLAM-Former/" target="_blank" style="color:#1a1a1a; text-decoration: underline;">Project Homepage</a>
+              </div>
+            </div>
+        
+          </div>
+        </li>
 
       </ul>
     </section>
@@ -255,6 +301,7 @@
       <h2>🏅 Honors and Awards</h2>
       <ul style="line-height: 2.0;">
         <li>2026, <strong>Special Prize, 44th Tsinghua Challenge Cup Student Extracurricular Academic and Technological Works Competition</strong>, 1st Place in the Information Technology Track, Tsinghua University</li>
+        <li>2026, <strong>Selected for the Undergraduate Academic Research Advancement Program</strong>, Tsinghua University</li>
         <li>2025, <strong>Academic Excellence Scholarship (Tsinghua Alumni – Jiukun Scholarship)</strong>, Tsinghua University</li>
         <li>2025, <strong>Dean’s Award, 4th Qingli Academic Festival</strong>, Zhili College, Tsinghua University</li>
         <li>2024, <strong>Social Practice Excellence Scholarship (Tsinghua Friends – Dong Scholarship)</strong>, Tsinghua University</li>
